@@ -73,5 +73,12 @@ namespace SachOnline.Controllers
              var sach = from s in data.SACHes where s.MaNXB == id select s;
              return PartialView(sach);
          }
+        public ActionResult ChiTietSach (int id)
+        {
+            var sach = from s in data.SACHes where s.MaSach == id select s;
+            return View(sach.Single());
+        }
+       
+       
     }
 }
