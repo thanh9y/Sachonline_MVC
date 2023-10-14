@@ -156,3 +156,7 @@ C:\hoc\WEB\Sachonline_MVC\SachOnline\obj\Debug\SachOnline.csproj.CoreCompileInpu
 C:\hoc\WEB\Sachonline_MVC\SachOnline\obj\Debug\SachOnline.csproj.CopyComplete
 C:\hoc\WEB\Sachonline_MVC\SachOnline\obj\Debug\SachOnline.dll
 C:\hoc\WEB\Sachonline_MVC\SachOnline\obj\Debug\SachOnline.pdb
+C:\hoc\WEB\Sachonline_MVC\SachOnline\bin\PagedList.dll
+C:\hoc\WEB\Sachonline_MVC\SachOnline\bin\PagedList.Mvc.dll
+C:\hoc\WEB\Sachonline_MVC\SachOnline\bin\PagedList.xml
+C:\hoc\WEB\Sachonline_MVC\SachOnline\bin\PagedList.Mvc.xml

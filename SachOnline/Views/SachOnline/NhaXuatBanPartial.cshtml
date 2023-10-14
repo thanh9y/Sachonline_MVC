@@ -3,8 +3,9 @@
     <li class="list-group-item active" style="font-weight:bold; text-align:center">SÁCH THEO NHÀ XUẤT BẢN</li>
     @foreach (var item in Model)
     {
-        <a href="@Url.Action("SachTheoNXB","SachOnline", new { id = item.MaNXB})" class="list-group-item">@item.TenNXB</a>
-
+        <li class="list-group-item">
+            <a href="@Url.Action("SachTheoNXB","SachOnline", new { iMaNXB = item.MaNXB})" class="list-group-item">@item.TenNXB</a>
+            </li>
     }
 
-</ul>
+    </ul>

@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
+using PagedList.Mvc;
+using System.Web.UI;
 
 
 namespace SachOnline.Controllers
@@ -63,16 +66,22 @@ namespace SachOnline.Controllers
         {
             return data.SACHes.OrderByDescending(a => a.SoLuongBan).Take(count).ToList();
         }
-        public ActionResult SachTheoChuDe(int id)
+        public ActionResult SachTheoChuDe(int iMaCD, int ? page )
         {
-            var sach = from s in data.SACHes where s.MaCD == id select s;
-            return PartialView(sach);
+            ViewBag.MaCD = iMaCD;
+            int iSize = 3;
+            int iPageNum = (page ?? 1);
+            var sach = from s in data.SACHes where s.MaCD ==iMaCD select s;
+            return View(sach.ToPagedList(iPageNum,iSize));
         }
-         public ActionResult SachTheoNXB(int id)
+         public ActionResult SachTheoNXB(int iMaNXB, int? page)
          {
-             var sach = from s in data.SACHes where s.MaNXB == id select s;
-             return PartialView(sach);
-         }
+            ViewBag.MaNXB = iMaNXB;
+            int iSize = 3;
+            int iPageNum = (page ?? 1);
+            var sach = from s in data.SACHes where s.MaNXB == iMaNXB select s;
+             return View(sach.ToPagedList(iPageNum, iSize));
+        }
         public ActionResult ChiTietSach (int id)
         {
             var sach = from s in data.SACHes where s.MaSach == id select s;
