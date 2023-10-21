@@ -31,7 +31,7 @@ namespace SachOnline.Controllers
             if (ad != null)
             {
                 Session["Admin"] = ad;
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Index","SachOnline");
             }
             else
             {
