@@ -80,7 +80,7 @@ namespace SachOnline.Controllers
         {
             List<GioHang> lstGioHang = LayGioHang();
             GioHang sp = lstGioHang.SingleOrDefault(n => n.iMaSach == iMaSach);
-            if (sp == null)
+            if (sp != null)
             {
                 lstGioHang.RemoveAll(n => n.iMaSach == iMaSach);
                 if(lstGioHang.Count == 0)
@@ -94,7 +94,7 @@ namespace SachOnline.Controllers
         {
             List<GioHang> lstGioHang = LayGioHang();
             GioHang sp = lstGioHang.SingleOrDefault(n => n.iMaSach == iMaSach);
-            if (sp == null)
+            if (sp != null)
             {
                 sp.iSoLuong = int.Parse(f["txtSoLuong"].ToString());
             }

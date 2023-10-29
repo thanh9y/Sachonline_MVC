@@ -554,6 +554,7 @@
     <Content Include="ckeditor\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
     <Content Include="ckeditor\ckeditor\SECURITY.md" />
     <Content Include="ckeditor\ckeditor\skins\moono-lisa\readme.md" />
+    <Content Include="Areas\Admin\Views\Sach\Details.cshtml" />
     <None Include="Models\dbSachOnline.dbml.layout">
       <DependentUpon>dbSachOnline.dbml</DependentUpon>
     </None>
