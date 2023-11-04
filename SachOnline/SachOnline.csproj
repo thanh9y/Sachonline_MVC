@@ -128,6 +128,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\SachController.cs" />
     <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -555,6 +556,8 @@
     <Content Include="ckeditor\ckeditor\SECURITY.md" />
     <Content Include="ckeditor\ckeditor\skins\moono-lisa\readme.md" />
     <Content Include="Areas\Admin\Views\Sach\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Sach\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Sach\Edit.cshtml" />
     <None Include="Models\dbSachOnline.dbml.layout">
       <DependentUpon>dbSachOnline.dbml</DependentUpon>
     </None>
@@ -601,10 +604,12 @@
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\SachOnline\LoginLogout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Views\Home\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>

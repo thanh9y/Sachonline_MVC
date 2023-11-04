@@ -1,29 +1,26 @@
-﻿
-
-<div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">SachOnline</a>
-</div>
+﻿﻿﻿@model IEnumerable<SachOnline.Models.CHUDE>
 
 <div class="collapse navbar-collapse" id="navbar1">
     <ul class="nav navbar-nav">
-        <li class="active"><a href="#">TRANG CHỦ</a></li>
-        <li class="active"><a href="#">GIỚI THIỆU</a></li>
-        <li class="active"><a href="#">LIÊN HỆ</a></li>
+        <a class="navbar-brand" href="#">SachOnline</a>
+        <li class="active"><a href="@Url.Action("Index", "SachOnline")">TRANG CHỦ</a> </li>
+        <li><a href="#">GIỚI THIỆU</a> </li>
+        <li><a href="#">LIÊN HỆ</a> </li>
+
     </ul>
     <ul class="nav navbar-nav navbar-right">
-       @Html.Action("LoginLogout","SachOnline")
-       @Html.Action("GioHAngPartital","GioHang")
-    
+        @* @Html.Action("LoginLogout", "SachOnline")*@
+        @Html.Action("GioHangPartial", "GioHang")
     </ul>
     <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Tìm kiếm">
+            <input type="text" class="form-control" placeholder="Tim kiem">
         </div>
         <button type="submit" class="btn btn-default">Tìm</button>
     </form>
 </div>
+
+
+
+
+

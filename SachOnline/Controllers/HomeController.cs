@@ -31,12 +31,25 @@ namespace SachOnline.Controllers
             if (ad != null)
             {
                 Session["Admin"] = ad;
-                return RedirectToAction("Index","SachOnline");
+                return RedirectToAction("Index", "Home");
             }
             else
             {
                 ViewBag.ThongBao = "Tên đăng nhập hoặc mật khẩu không đúng";
             }
+            return View();
+        }
+        public ActionResult About()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
+
             return View();
         }
     }
