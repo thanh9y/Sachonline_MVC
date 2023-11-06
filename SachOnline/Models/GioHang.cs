@@ -11,11 +11,11 @@ namespace SachOnline.Models
         public int iMaSach { get; set; }
         public string sTenSach { get; set;}
         public string sAnhBia { get; set; }
-        public double dDongGia { get; set; }
+        public double dDonGia { get; set; }
         public int iSoLuong { get; set; }
         public double dThanhTien 
         { 
-            get { return iSoLuong * dDongGia; }
+            get { return iSoLuong * dDonGia; }
         }
         public GioHang(int ms) 
         {
@@ -23,7 +23,7 @@ namespace SachOnline.Models
             SACH s = data.SACHes.Single(n => n.MaSach == iMaSach);
             sTenSach = s.TenSach;
             sAnhBia = s.AnhBia;
-            dDongGia = double.Parse(s.GiaBan.ToString());
+            dDonGia = double.Parse(s.GiaBan.ToString());
             iSoLuong = 1;
         }
     }

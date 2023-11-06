@@ -146,7 +146,7 @@ namespace SachOnline.Controllers
                 ctdh.MaDonHang = ddh.MaDonHang;
                 ctdh.MaSach = item.iMaSach;
                 ctdh.SoLuong = item.iSoLuong;
-                ctdh.DonGia = (decimal)item.dDongGia;
+                ctdh.DonGia = (decimal)item.dDonGia;
                 data.CHITIETDATHANGs.InsertOnSubmit(ctdh);
             }
             data.SubmitChanges();
