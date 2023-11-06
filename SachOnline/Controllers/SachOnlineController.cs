@@ -20,10 +20,10 @@ namespace SachOnline.Controllers
         public ActionResult Index()
         {
             var listSachMoi = LaySachMoi(6);
-            var listSachBanNhieu = LaySachBanNhieu(6);
+
 
             ViewBag.ListSachMoi = listSachMoi;
-            ViewBag.ListSachBanNhieu = listSachBanNhieu;
+
 
             return View();
         }
@@ -51,7 +51,8 @@ namespace SachOnline.Controllers
 
         public ActionResult SachBanNhieuPartial()
         {
-            return PartialView();
+            var listSachBanNhieu = LaySachBanNhieu(6);
+            return PartialView(listSachBanNhieu);
         }
 
         public ActionResult SliderPartial()
